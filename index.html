@@ -14,7 +14,7 @@
             <span class="logo">&lt;/&gt;</span>
             <h1>WebDev</h1>
         </div>
-        <button id="theme" class="theme-btn">Dark Mode</button>
+        <button id="theme" class="theme-btn" type="button" aria-pressed="false">Dark Mode</button>
     </header>
 
     <main class="container">
@@ -26,59 +26,59 @@
                 <div class="grid-2">
                     <div class="field">
                         <label for="name">Full Name</label>
-                        <input type="text" id="name" placeholder="e.g Njoki Victor">
-                        <small class="error" id="nameError"></small>
+                        <input type="text" id="name" placeholder="e.g Njoki Victor" aria-describedby="nameError">
+                        <small class="error" id="nameError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="e.g mugo@students.kyu.ac.ke">
-                        <small class="error" id="emailError"></small>
+                        <input type="email" id="email" placeholder="e.g mugo@students.kyu.ac.ke" aria-describedby="emailError">
+                        <small class="error" id="emailError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="password">Password</label>
-                        <input type="password" id="password" placeholder="********">
-                        <small class="error" id="passwordError"></small>
+                        <input type="password" id="password" placeholder="********" aria-describedby="passwordError">
+                        <small class="error" id="passwordError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="confirm-password">Confirm Password</label>
-                        <input type="password" id="confirm-password" placeholder="********">
-                        <small class="error" id="confirmError"></small>
+                        <input type="password" id="confirm-password" placeholder="********" aria-describedby="confirmError">
+                        <small class="error" id="confirmError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="gender">Gender</label>
-                        <select id="gender">
+                        <select id="gender" aria-describedby="genderError">
                             <option value="">-- Select --</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="other">Other</option>
                         </select>
-                        <small class="error" id="genderError"></small>
+                        <small class="error" id="genderError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="dob">Date of Birth</label>
-                        <input type="date" id="dob">
-                        <small class="error" id="dobError"></small>
+                        <input type="date" id="dob" aria-describedby="dobError">
+                        <small class="error" id="dobError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="country">Country</label>
-                        <input type="text" id="country" placeholder="e.g Kenya">
-                        <small class="error" id="countryError"></small>
+                        <input type="text" id="country" placeholder="e.g Kenya" aria-describedby="countryError">
+                        <small class="error" id="countryError" role="alert" aria-live="polite"></small>
                     </div>
                     <div class="field">
                         <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" placeholder="e.g +254 700 000 000">
-                        <small class="error" id="phoneError"></small>
+                        <input type="tel" id="phone" placeholder="e.g +254 700 000 000" aria-describedby="phoneError">
+                        <small class="error" id="phoneError" role="alert" aria-live="polite"></small>
                     </div>
                 </div>
 
                 <div class="field">
                     <label for="bio">Bio</label>
-                    <textarea id="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
-                    <small class="error" id="bioError"></small>
+                    <textarea id="bio" rows="4" placeholder="Tell us about yourself..." aria-describedby="bioError"></textarea>
+                    <small class="error" id="bioError" role="alert" aria-live="polite"></small>
                 </div>
 
                 <button type="submit" class="submit-btn">Register</button>
-                <p id="successMsg" class="success hidden"></p>
+                <p id="successMsg" class="success hidden" role="status" aria-live="polite"></p>
             </form>
         </section>
 
